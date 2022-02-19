@@ -1,0 +1,573 @@
+body {
+    background-color: #EDF0F9;
+}
+
+#slider {
+    padding-top: 40%;
+    background: url('/assets/images/slider/la.jpg') top center/ cover no-repeat;
+    position: relative;
+}
+
+#slider .slider-icon {
+    position: absolute;
+    color: #FFFFFF;
+    right: 165px;
+    top: 20px;
+    font-size: 30px;
+    opacity: 0.91;
+    cursor: pointer;
+}
+
+#slider .slider-icon i:first-child {
+    opacity: 0.87;
+}
+
+#slider .slider-icon i:first-child:hover {
+    opacity: 1;
+}
+
+#slider .slider-icon i:last-child {
+    opacity: 0.87;
+}
+
+#slider .slider-icon i:last-child:hover {
+    opacity: 1;
+}
+
+#slider .slider-icon i:last-child {
+    padding-left: 35px;
+}
+
+#container {
+    width: 80%;
+    margin: 0px auto;
+}
+
+section .product-container>li {
+    margin-top: 100px;
+    box-sizing: border-box;
+}
+
+section .product-container>li:first-child {
+    margin-top: 80px;
+}
+
+section .product-container h3 {
+    font-size: 20px;
+    line-height: 40px;
+    border-left: 8px solid #2C459C;
+    padding-left: 20px;
+    margin-bottom: 50px;
+}
+
+section .product-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section .product-item {
+    width: 30%;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+
+section .product-item img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    height: 220px;
+}
+
+section .product-item img:hover {
+    opacity: 0.8;
+}
+
+section .product-item a {
+    line-height: 50px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #7182BE;
+    border: 1px solid #7182BE;
+    border-radius: 10px;
+    padding: 2px 6px;
+}
+
+section .product-item p {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+section .product-item p:last-child {
+    margin-bottom: 25px;
+    font-size: 11px;
+    font-weight: normal;
+    color: #D0D0D0;
+}
+
+section .product-item div {
+    margin-left: 18px;
+}
+
+section .another-link {
+    margin: 50px auto;
+    width: 30%;
+    text-align: center;
+    background-color: #000000;
+    border-radius: 50px;
+}
+
+section .another-link a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 57px;
+    display: block;
+}
+
+footer {
+    background-color: #010048;
+    text-align: center;
+    padding: 45px 0px 35px 0px;
+}
+
+footer .contact {
+    margin-bottom: 45px;
+}
+
+footer .contact img {
+    width: 93px;
+    height: 63px;
+    margin-bottom: 45px;
+}
+
+footer .concern-info {
+    color: #FFFFFF;
+    display: flex;
+    width: 30%;
+    margin: 0px auto;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+footer .copyright {
+    font-size: 13px;
+    color: #FFFFFF;
+    line-height: 20px;
+}
+
+footer .copyright span {
+    text-transform: uppercase;
+}
+
+#scroll {
+    width: 110px;
+    height: 110px;
+    background-color: #333333;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 110px;
+    border-radius: 70px;
+    font-size: 35px;
+    position: fixed;
+    bottom: 50px;
+    right: 150px;
+}
+
+.login {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.login.open {
+    display: flex;
+}
+
+.login .login-container {
+    width: 30%;
+    background-color: #D0D0D0;
+    position: relative;
+    border-radius: 20px;
+}
+
+.login .login-close {
+    position: absolute;
+    right: 11px;
+    top: 8px;
+    font-size: 21px;
+    color: .000000;
+    cursor: pointer;
+}
+
+.login .login-header {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.login .login-body {
+    width: 75%;
+    margin: 10px auto;
+}
+
+.login .login-body .login-label {
+    display: block;
+    line-height: 35px;
+    font-size: 18px;
+}
+
+.login .login-body .login-input {
+    display: block;
+    width: 95%;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    padding-left: 20px;
+}
+
+.login .save-pass {
+    width: 30%;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.login .save-pass .container-cb {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+    color: #7a7878;
+    padding-left: 21px;
+}
+
+.save-pass input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.save-pass .checkmark {
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    height: 14px;
+    width: 14px;
+    background-color: #eee;
+}
+
+.save-pass input:checked~.checkmark {
+    background-color: #7a7878;
+}
+
+.save-pass .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.save-pass input:checked~.checkmark:after {
+    display: block;
+}
+
+.save-pass .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 4px;
+    height: 7px;
+    border: solid #FFFFFF;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.login-body .fogot-pass {
+    display: inline-block;
+    width: 31%;
+    margin-left: 134px;
+}
+
+.login-body .fogot-pass a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #7a7878;
+}
+
+.login-footer .container-login-footer {
+    width: 75%;
+    margin: 0px auto;
+}
+
+.login-footer .login-button {
+    width: 102%;
+    background-color: #010048;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.login-footer .login-button a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 40px;
+    display: block;
+}
+
+.login-footer .login-button i {
+    margin-right: 10px;
+}
+
+.login-footer .login-main {
+    margin-top: 20px;
+}
+
+.login-footer .login-footer-space {
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 17px;
+    line-height: 40px;
+}
+
+.login-footer .login-fb {
+    background-color: #2C459C;
+}
+
+.login-footer .login-gg {
+    background-color: #a80a0a;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    #slider .slider-icon {
+        right: 50px;
+        font-size: 25px;
+    }
+    section .another-link a {
+        font-size: 15px;
+        line-height: 40px;
+    }
+    section .product-item img {
+        height: 150px;
+    }
+    section .product-item p {
+        font-size: 10px;
+    }
+    #scroll {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        font-size: 25px;
+        bottom: 40px;
+        right: 60px;
+    }
+    footer .contact img {
+        width: 80px;
+        height: 50px;
+    }
+    footer .concern-info {
+        width: 45%;
+        font-size: 10px;
+    }
+    .login .login-body {
+        width: 90%;
+    }
+    .login .login-header {
+        font-size: 15px;
+    }
+    .login .login-body .login-label {
+        line-height: 30px;
+        font-size: 16px;
+    }
+    .login .login-body .login-input {
+        font-size: 11px;
+        width: 85%;
+    }
+    .login-footer .container-login-footer {
+        width: 85%;
+    }
+    .login-footer .login-button a {
+        font-size: 14px;
+    }
+    .login-footer .login-footer-space {
+        font-size: 14px;
+    }
+    .login .save-pass {
+        width: 41%;
+    }
+    .login .save-pass .container-cb {
+        font-size: 11px;
+    }
+    .login-body .fogot-pass {
+        width: 50%;
+        position: absolute;
+        right: -8px;
+        top: 208px;
+    }
+    .login-body .fogot-pass a {
+        font-size: 11px;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    #slider .slider-icon {
+        right: 50px;
+        font-size: 25px;
+    }
+    section .another-link a {
+        font-size: 15px;
+        line-height: 40px;
+    }
+    section .product-item img {
+        height: 150px;
+    }
+    section .product-item p {
+        font-size: 13px;
+    }
+    #scroll {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        font-size: 25px;
+        bottom: 40px;
+        right: 60px;
+    }
+    footer .contact img {
+        width: 80px;
+        height: 50px;
+    }
+    footer .concern-info {
+        width: 45%;
+        font-size: 10px;
+    }
+    .login .login-body {
+        width: 90%;
+    }
+    .login .login-header {
+        font-size: 15px;
+    }
+    .login .login-body .login-label {
+        line-height: 30px;
+        font-size: 16px;
+    }
+    .login .login-body .login-input {
+        font-size: 11px;
+        width: 85%;
+    }
+    .login .save-pass {
+        width: 41%;
+    }
+    .login .save-pass .container-cb {
+        font-size: 11px;
+    }
+    .login-body .fogot-pass {
+        width: 50%;
+        position: absolute;
+        right: -8px;
+        top: 208px;
+    }
+    .login-body .fogot-pass a {
+        font-size: 11px;
+    }
+    .login-footer .container-login-footer {
+        width: 85%;
+    }
+    .login-footer .login-button a {
+        font-size: 14px;
+    }
+    .login-footer .login-footer-space {
+        font-size: 14px;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    footer .contact img {
+        width: 90px;
+        height: 60px;
+    }
+    footer .concern-info {
+        width: 45%;
+        font-size: 13px;
+    }
+    .login-body {
+        position: relative;
+    }
+    .login .save-pass {
+        width: 41%;
+    }
+    .login .save-pass .container-cb {
+        font-size: 13px;
+    }
+    .login-body .fogot-pass {
+        width: 50%;
+        position: absolute;
+        right: -21px;
+        top: 162px;
+    }
+    .login-body .fogot-pass a {
+        font-size: 13px;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .login .save-pass {
+        width: 41%;
+    }
+    .login .save-pass .container-cb {
+        font-size: 14px;
+    }
+    .login-body .fogot-pass {
+        width: 50%;
+        position: absolute;
+        right: -30px;
+        top: 226px;
+    }
+    .login-body .fogot-pass a {
+        font-size: 14px;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .login .save-pass {
+        width: 41%;
+    }
+    .login .save-pass .container-cb {
+        font-size: 14px;
+    }
+    .login-body .fogot-pass {
+        width: 50%;
+        position: absolute;
+        right: -55px;
+        top: 226px;
+    }
+    .login-body .fogot-pass a {
+        font-size: 14px;
+    }
+}
